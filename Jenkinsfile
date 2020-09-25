@@ -21,8 +21,8 @@ pipeline{
                             sshPublisherDesc(
                                 configName: "staging",
                                 sshCredentials: [
-                                    username: '$USERNAME',
-                                    encryptedPassphrase: '$PASSWORD'
+                                    username: "$USERNAME",
+                                    encryptedPassphrase: "$PASSWORD"
                                 ],
                                 transfers: [
                                     sourceFiles: 'dist/trainSchedule.zip',
@@ -51,8 +51,8 @@ pipeline{
                             sshPublisherDesc(
                                 configName: "production",
                                 sshCredentials: [
-                                    username: '$USERNAME',
-                                    encryptedPassphrase: '$PASSWORD'
+                                    username: "$USERNAME",
+                                    encryptedPassphrase: "$PASSWORD"
                                 ],
                                 transfers: [
                                     sourceFiles: 'dist/trainSchedule.zip',
