@@ -5,7 +5,7 @@ pipeline{
             steps{
                 echo "building app"
                 sh './gradlew build'
-                archiveArtifacts artifacts: 'dist/trainschedule.zip', fingerprint: true
+                archiveArtifacts artifacts: 'dist/trainSchedule.zip', fingerprint: true
             }
         }
         stage("Deploystaging"){
